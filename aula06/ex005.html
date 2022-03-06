@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com DOM</title>
+    <style>
+        body{
+            background: rgb(90, 174, 252);
+            color:white;
+            font: normal 18apt Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando estudos <strong>DOM</strong></h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript.</p>
+    <div id="msg">Clique aqui!</div>
+    <!--<div name = "msg">Clique aqui!</div>
+    <div class = "msg">Clique aqui!</div>-->
+    
+
+    <script>
+       /*window.document.write('Olá mundo!<br/>')
+        window.document.write(window.document.charset)//para seber o set de caracteres
+        window.document.write(window.navigator.appName)//para mostrar o navegador atual
+        window.document.write(window.document.URL)//para mostrar a URL*/
+
+       var corpo = window.document.body
+       var p1 = window.document.getElementsByTagName('p')[0] //para pegar à primeira tag "p"
+       
+       
+
+       /*var d = window.document.getElementById('msg')
+       d.style.background = 'green'//para mudar a cor de fundo da "div"
+       //d.innerText = 'Estou aguardando...'
+       window.document.getElementById('msg').innerText = 'Óla!'//para mudar oque esta escrito dentro de 'msg'*/
+
+      /* var d = window.document.getElementsByName('msg')[0]
+       d.innertext = 'Óla!'*/
+
+       /*var d = window.document.getElementsByClassName('msg')[0]
+       d.innerHTML = 'Óla!'*/
+
+       var d = window.document.querySelector('div#msg')
+       d.style.color = 'blue'
+
+       /*var p2 = window.document.getElementsByTagName('p')[1] //para pegar à segunda teg "p" e assim sucessivamente. 
+        window.document.write('Está escrito assim: ' + p1.innerText + '<br/>')//innertext é o texto que está dentro do 1° parágrafo
+       p1.style.color = 'blue'//para mudar a cor da tag "p,0"
+       corpo.style.background = 'orange'//para mudar sempre que quiser a cor de fundo
+       window.document.write(p2.innerHTML + '<br/>')//para pegar a formatação do texto também
+      //window.alert(p2.innerHTML)*/
+    </script>
+</body>
+</html>

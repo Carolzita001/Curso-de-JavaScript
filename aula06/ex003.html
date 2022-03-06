@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu primeiro programa</title>
+
+    <style>
+        body{
+            background-color: rgb(114, 66, 158);
+            color:white;
+            font:normal 20tp Arial;
+        }
+
+        h1{
+            color:yellow;
+        }
+
+    </style>
+
+</head>
+<body>
+    Olá, mundo!
+    <h1>Olá, mundo!</h1>
+    <p>Já me livrei da maldição</p>
+
+    <script>
+        var n1 = Number.parseFloat(window.prompt("Digite um número: ")) //number
+        var n2 = Number.parseFloat(window.prompt("Digite outro número: ")) //number
+        // var n1 = Number.parseInt(window.prompt("digite um número: ") O valor é apresentado como number
+        var s = n1 + n2 
+        window.alert(`A soma entre ${n1} e ${n2} é igual à` + ' ' + String(s))
+        //( number + number) para adição.E (string + string) para concatenação
+        //O "window.prompt" retorna pra gente uma string, mesmo que tenha digitado um número
+
+    </script>
+
+</body>
+</html>
