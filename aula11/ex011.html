@@ -16,6 +16,8 @@
             width: auto;
             height: auto;
             border-radius: 10px;
+            border-color: white;
+            border-style: double;
         }
 
         h1{
@@ -27,9 +29,19 @@
             display: flex;
             flex-direction: row;
             align-items: center;
+            justify-content: center;
         }
         p{
-            font: normal 15pt arial
+            font: normal 15pt arial;
+            display: flex;
+            justify-content: center;
+            color: white;
+            
+        }
+
+        #para2{
+            
+            margin-right: 25px;
         }
 
         #txtnacio{
@@ -48,13 +60,21 @@
             font: normal Arial;
         }
 
-       
+       #res{
+        display: flex;
+        justify-content: center;
+        font: normal;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+       }
+
     </style>
 </head>
 <body>
     <div id = "corpo">
         <h1>Bem Vindo!</h1>
-        <p>Bem vindo ao Portal do Imigrante Brasileiro. Aqui você recebe autorização imediata para experienciar nossa cultura  </p>
+        <p>Este é o Portal do Imigrante Brasileiro.</p>
+        <p id = "para2">Aqui você recebe autorização imediata, para experienciar nossa cultura.</p>
+
         <div id = "inputs">
             <p>Insira sua nacionalidade: <input type="txt" name = "txtnacio" id = "txtnacio"></p>
             <input type="button" value = "verificar" id = "button" onclick="calcular()">
@@ -71,12 +91,12 @@
             var res = window.document.querySelector('div#res')
             
             var nacionalidade = txtn.value
-            res.innerHTML += `Sua nacionalidade é: ${nacionalidade}.</br>`
+            res.innerHTML = `Sua nacionalidade é: ${nacionalidade}.</br> `
 
             if (nacionalidade != 'Brasileiro'){
-                res.innerHTML += 'Você é <strong>estrangeito!</strong> </br>' + 'Dirija-se a central de imigração C.'
+                res.innerHTML += 'Você é estrangeiro. Dirija-se a central de imigração C.'
             }else{
-                res.innerHTML += 'Você é natural do Brasil.</br>' + '<strong>Bem vindo<strong>!'
+                res.innerHTML += 'Você é natural do Brasil. Bem vindo!'
             }
 
 
