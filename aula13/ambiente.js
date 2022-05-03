@@ -5,6 +5,7 @@ do{
     c++
 }while(c <= 6)// Estrutura de repetição com teste lógico no ínicio.
 
+//-------------------------------------------------------------------------
 /*
 while( c <= 6){
     console.log(`Passo ${c}`)

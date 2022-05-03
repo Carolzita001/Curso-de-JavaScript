@@ -7,8 +7,8 @@
         {
             "type": "pwa-chrome",
             "request": "launch",
-            "name": "Open ex005.html",
-            "file": "c:\\Users\\carol\\OneDrive\\Documentos\\ProgramacaoK\\cursodog\\aula06\\ex005.html"
+            "name": "ambiente.js",
+            "file": "c:\\Users\\carol\\OneDrive\\Documentos\\ProgramacaoK\\cursodog\\aula14\\ambiente.js"
         }
     ]
 }
